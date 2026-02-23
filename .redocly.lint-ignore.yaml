@@ -1,0 +1,183 @@
+# This file instructs Redocly's linter to ignore the rules contained for specific parts of your API.
+# See https://redocly.com/docs/cli/ for more information.
+openapi/bundled.yaml:
+  info-license:
+    - '#/info'
+  operation-4xx-response:
+    - '#/paths/~1articles/get/responses'
+    - '#/paths/~1articles~1latest/get/responses'
+    - '#/paths/~1pages/get/responses'
+    - '#/paths/~1pages~1{id}/get/responses'
+    - '#/paths/~1tags/get/responses'
+    - '#/paths/~1users~1{id}/get/responses'
+    - '#/paths/~1videos/get/responses'
+  no-required-schema-properties-undefined:
+    - '#/components/schemas/ArticleIndex/required/13'
+  no-invalid-media-type-examples:
+    - >-
+      #/paths/~1articles/get/responses/200/content/application~1json/example/0/cover_image
+    - >-
+      #/paths/~1articles/get/responses/200/content/application~1json/example/0/social_image
+    - >-
+      #/paths/~1articles/get/responses/200/content/application~1json/example/0/url
+    - >-
+      #/paths/~1articles/get/responses/200/content/application~1json/example/0/canonical_url
+    - >-
+      #/paths/~1articles/get/responses/200/content/application~1json/example/0/user/user_id
+    - >-
+      #/paths/~1articles/get/responses/200/content/application~1json/example/0/organization/profile_image
+    - >-
+      #/paths/~1articles/get/responses/200/content/application~1json/example/0/organization/profile_image_90
+    - >-
+      #/paths/~1articles/get/responses/200/content/application~1json/example/0/comments_count
+    - >-
+      #/paths/~1articles/get/responses/200/content/application~1json/example/0/collection_id
+    - >-
+      #/paths/~1articles~1latest/get/responses/200/content/application~1json/example/0/cover_image
+    - >-
+      #/paths/~1articles~1latest/get/responses/200/content/application~1json/example/0/social_image
+    - >-
+      #/paths/~1articles~1latest/get/responses/200/content/application~1json/example/0/url
+    - >-
+      #/paths/~1articles~1latest/get/responses/200/content/application~1json/example/0/canonical_url
+    - >-
+      #/paths/~1articles~1latest/get/responses/200/content/application~1json/example/0/user/user_id
+    - >-
+      #/paths/~1articles~1latest/get/responses/200/content/application~1json/example/0/comments_count
+    - >-
+      #/paths/~1articles~1latest/get/responses/200/content/application~1json/example/0/collection_id
+    - >-
+      #/paths/~1articles~1latest/get/responses/200/content/application~1json/example/1/cover_image
+    - >-
+      #/paths/~1articles~1latest/get/responses/200/content/application~1json/example/1/social_image
+    - >-
+      #/paths/~1articles~1latest/get/responses/200/content/application~1json/example/1/url
+    - >-
+      #/paths/~1articles~1latest/get/responses/200/content/application~1json/example/1/canonical_url
+    - >-
+      #/paths/~1articles~1latest/get/responses/200/content/application~1json/example/1/user/user_id
+    - >-
+      #/paths/~1articles~1latest/get/responses/200/content/application~1json/example/1/comments_count
+    - >-
+      #/paths/~1articles~1latest/get/responses/200/content/application~1json/example/1/collection_id
+    - >-
+      #/paths/~1articles~1latest/get/responses/200/content/application~1json/example/2/cover_image
+    - >-
+      #/paths/~1articles~1latest/get/responses/200/content/application~1json/example/2/social_image
+    - >-
+      #/paths/~1articles~1latest/get/responses/200/content/application~1json/example/2/url
+    - >-
+      #/paths/~1articles~1latest/get/responses/200/content/application~1json/example/2/canonical_url
+    - >-
+      #/paths/~1articles~1latest/get/responses/200/content/application~1json/example/2/user/user_id
+    - >-
+      #/paths/~1articles~1latest/get/responses/200/content/application~1json/example/2/comments_count
+    - >-
+      #/paths/~1articles~1latest/get/responses/200/content/application~1json/example/2/collection_id
+    - >-
+      #/paths/~1comments/get/responses/200/content/application~1json/example/0/body_html
+    - >-
+      #/paths/~1comments/get/responses/200/content/application~1json/example/0/user
+    - >-
+      #/paths/~1comments/get/responses/200/content/application~1json/example/0/children
+    - >-
+      #/paths/~1followers~1users/get/responses/200/content/application~1json/example/0/created_at
+    - >-
+      #/paths/~1followers~1users/get/responses/200/content/application~1json/example/0/username
+    - >-
+      #/paths/~1followers~1users/get/responses/200/content/application~1json/example/1/created_at
+    - >-
+      #/paths/~1followers~1users/get/responses/200/content/application~1json/example/1/username
+    - >-
+      #/paths/~1organizations~1{username}~1articles/get/responses/200/content/application~1json/example/0/cover_image
+    - >-
+      #/paths/~1organizations~1{username}~1articles/get/responses/200/content/application~1json/example/0/social_image
+    - >-
+      #/paths/~1organizations~1{username}~1articles/get/responses/200/content/application~1json/example/0/url
+    - >-
+      #/paths/~1organizations~1{username}~1articles/get/responses/200/content/application~1json/example/0/canonical_url
+    - >-
+      #/paths/~1organizations~1{username}~1articles/get/responses/200/content/application~1json/example/0/user/user_id
+    - >-
+      #/paths/~1organizations~1{username}~1articles/get/responses/200/content/application~1json/example/0/organization/profile_image
+    - >-
+      #/paths/~1organizations~1{username}~1articles/get/responses/200/content/application~1json/example/0/organization/profile_image_90
+    - >-
+      #/paths/~1organizations~1{username}~1articles/get/responses/200/content/application~1json/example/0/comments_count
+    - >-
+      #/paths/~1organizations~1{username}~1articles/get/responses/200/content/application~1json/example/0/collection_id
+    - '#/paths/~1pages/get/responses/200/content/application~1json/example/0/id'
+    - >-
+      #/paths/~1pages/get/responses/200/content/application~1json/example/0/landing_page
+    - >-
+      #/paths/~1pages/get/responses/200/content/application~1json/example/0/body_html
+    - >-
+      #/paths/~1pages/get/responses/200/content/application~1json/example/0/processed_html
+    - >-
+      #/paths/~1pages~1{id}/get/responses/200/content/application~1json/example/id
+    - >-
+      #/paths/~1pages~1{id}/get/responses/200/content/application~1json/example/landing_page
+    - >-
+      #/paths/~1pages~1{id}/get/responses/200/content/application~1json/example/body_html
+    - >-
+      #/paths/~1pages~1{id}/get/responses/200/content/application~1json/example/processed_html
+    - >-
+      #/paths/~1pages~1{id}/put/responses/200/content/application~1json/example/id
+    - >-
+      #/paths/~1pages~1{id}/put/responses/200/content/application~1json/example/landing_page
+    - >-
+      #/paths/~1pages~1{id}/put/responses/200/content/application~1json/example/body_html
+    - >-
+      #/paths/~1pages~1{id}/put/responses/200/content/application~1json/example/processed_html
+    - >-
+      #/paths/~1pages~1{id}/delete/responses/200/content/application~1json/example/id
+    - >-
+      #/paths/~1pages~1{id}/delete/responses/200/content/application~1json/example/landing_page
+    - >-
+      #/paths/~1pages~1{id}/delete/responses/200/content/application~1json/example/body_html
+    - >-
+      #/paths/~1pages~1{id}/delete/responses/200/content/application~1json/example/processed_html
+    - >-
+      #/paths/~1podcast_episodes/get/responses/200/content/application~1json/example/0/image_url
+    - >-
+      #/paths/~1podcast_episodes/get/responses/200/content/application~1json/example/0/podcast/image_url
+  no-schema-type-mismatch:
+    - >-
+      #/paths/~1articles~1{id}/get/responses/200/content/application~1json/schema/items
+    - >-
+      #/paths/~1articles~1{username}~1{slug}/get/responses/200/content/application~1json/schema/items
+    - >-
+      #/paths/~1display_ads/post/requestBody/content/application~1json/schema/items
+    - >-
+      #/paths/~1display_ads/post/responses/200/content/application~1json/schema/items
+    - >-
+      #/paths/~1display_ads~1{id}/put/requestBody/content/application~1json/schema/items
+    - >-
+      #/paths/~1display_ads~1{id}/put/responses/200/content/application~1json/schema/items
+    - >-
+      #/paths/~1organizations~1{username}/get/responses/200/content/application~1json/schema/items
+    - >-
+      #/paths/~1profile_images~1{username}/get/responses/200/content/application~1json/schema/items
+    - >-
+      #/paths/~1users~1me/get/responses/200/content/application~1json/schema/items
+    - >-
+      #/paths/~1users~1{id}/get/responses/200/content/application~1json/schema/items
+  no-invalid-parameter-examples:
+    - '#/paths/~1comments~1{id}/get/parameters/0/example'
+  operation-operationId:
+    - '#/paths/~1display_ads/get/operationId'
+    - '#/paths/~1display_ads/post/operationId'
+    - '#/paths/~1display_ads~1{id}/get/operationId'
+    - '#/paths/~1display_ads~1{id}/put/operationId'
+    - '#/paths/~1display_ads~1{id}~1unpublish/put/operationId'
+    - '#/paths/~1pages/get/operationId'
+    - '#/paths/~1pages/post/operationId'
+    - '#/paths/~1pages~1{id}/get/operationId'
+    - '#/paths/~1pages~1{id}/put/operationId'
+    - '#/paths/~1pages~1{id}/delete/operationId'
+    - '#/paths/~1reactions~1toggle/post/operationId'
+    - '#/paths/~1reactions/post/operationId'
+  no-unused-components:
+    - '#/components/parameters/perPageParam30to100'
+    - '#/components/parameters/perPageParam80to1000'
+    - '#/components/parameters/listingCategoryParam'
